@@ -19,40 +19,56 @@
         <!-- Шапка -->
         <header class="header">
             <div class="header__container">
-                <nav class="header__nav">
-                    <a class="logo" href="./index.html">
-                        <span class="logo__segment">Web</span>Studio
-                    </a>
-                    <ul class="list header__list">
-                        <li>
-                            <a class="link link--current" href="./index.html">Студия</a>
-                        </li>
-                        <li>
-                            <a class="link link--right" href="./portfolio.html">Портфолио</a>
-                        </li>
-                        <li>
-                            <a class="link link--right" href="">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="list">
-                    <li>
-                        <a class="link header__link" href="mailto:info@devstudio.com">
-                            <svg class="link__icon" width="16" height="12">
-                                <use href="./images/icons.svg#envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link header__link link--right" href="tel:+380961111111">
-                            <svg class="link__icon" width="10" height="16">
-                                <use href="./images/icons.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                <a class="logo" href="./index.html">
+                    <span class="logo__segment">Web</span>Studio
+                </a>
+                <button class="menu-btn is-open" type="button" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="menu-btn__menu-icon" href="./images/icons.svg#menu"></use>
+                        <use class="menu-btn__close-icon" href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                </button>
+                <div class="header__menu-container is-open" data-menu>
+                    <div class="header__menu-thumb">
+                        <nav class="header__nav">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <a class="link link--current" href="./index.html">Студия</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="link" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="link" href="">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="contacts">
+                            <li class="contacts__item">
+                                <a class="link contact__link" href="mailto:info@devstudio.com">
+                                    <svg class="link__envelope-icon">
+                                        <use href="./images/icons.svg#envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="link contact__link contact__link--tel" href="tel:+380961111111">
+                                    <svg class="link__tel-icon">
+                                        <use href="./images/icons.svg#smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__social-list">
+                        <li class="header__social-link"><a class="link" href="">Instagram</a></li>
+                        <li class="header__social-link"><a class="link" href="">Twitter</a></li>
+                        <li class="header__social-link"><a class="link" href="">Facebook</a></li>
+                        <li class="header__social-link"><a class="link" href="">LinkedIn</a></li>
+                    </ul>  
+                </div>          
             </div>
         </header>
 
@@ -509,5 +525,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

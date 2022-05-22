@@ -1,0 +1,43 @@
+.menu-btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+
+    transition: color 250ms $timing;
+
+    &:hover {
+        color: $accentColor;
+    }
+
+    &.is-open {
+        position: fixed;
+        right: 15px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.menu-btn__close-icon {
+    display: none;
+}
+
+.menu-btn__menu-icon {
+    fill: currentColor;
+}
+
+.is-open {
+
+    & .menu-btn__menu-icon {
+        display: none; 
+    }
+
+    & .menu-btn__close-icon {
+        display: block;
+        fill: currentColor;
+    }
+}
+

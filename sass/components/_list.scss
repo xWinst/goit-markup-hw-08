@@ -1,8 +1,30 @@
 .list {
     margin: 0;
     padding-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
     list-style: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.list__item {
+    @media screen and (max-width: ($tablet - 1px)) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
 }
