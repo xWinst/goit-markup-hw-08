@@ -34,7 +34,6 @@
 }
 
 .header__menu-container {
-    // margin-left: 94px;
     display: flex;
     letter-spacing: 0.02em;
     flex-grow: 1;
@@ -57,6 +56,10 @@
     @media screen and (min-width: $tablet) {
         margin-left: 88px;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+    }
 }
 
 .header__menu-thumb {
@@ -66,7 +69,6 @@
 
     @media screen and (max-width: ($tablet - 1px)) {
         flex-direction: column;
-        flex-grow: 1;
     }
 }
 
@@ -81,7 +83,7 @@
         line-height: 1.14;
     }
 
-    }
+}
 
 .header__social-list {
     margin-top: 64px;
@@ -109,11 +111,3 @@
         display: none;
     }
 }
-
-
-
-
-//     font-size: 34px;
-//     line-height: 1.17;
-//     color: $accentColor;
-// }

@@ -436,6 +436,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header__menu-container {
+    margin-left: 93px;
+  }
+}
+
 .header__menu-thumb {
   display: flex;
   justify-content: space-between;
@@ -445,7 +451,6 @@ img {
 @media screen and (max-width: 767px) {
   .header__menu-thumb {
     flex-direction: column;
-    flex-grow: 1;
   }
 }
 
@@ -668,25 +673,21 @@ img {
 }
 
 .hero {
+  padding: 118px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-position: center;
-  margin: auto;
-  padding: 200px 0;
-  max-width: 1600px;
   color: #ffffff;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
 }
 
 .hero__slogan {
-  width: 696px;
   margin-bottom: 30px;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -720,35 +721,35 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section__container {
-  width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
 }
 
 .section--top {
-  padding-top: 0;
+  display: none;
 }
 
 .section--bg-color {
   background-color: #f5f4fa;
 }
 
-.feature {
-  width: 270px;
+.feature:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .feature__icon {
@@ -765,6 +766,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   color: #212121;
 }
@@ -791,27 +793,34 @@ img {
 }
 
 .team-card {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
+  font-size: 16px;
+  line-height: 1.19;
   align-items: center;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team-card__foto {
+  width: 450px;
+}
+
 .team-card__name {
   margin: 30px auto 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
   color: #212121;
 }
 
 .team-card__position {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
   color: #757575;
 }
 
@@ -853,7 +862,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
@@ -877,8 +886,8 @@ img {
 }
 
 .footer__container {
-  display: flex;
-  width: 1200px;
+  max-width: 480px;
+  text-align: center;
   margin: auto;
   padding: 60px 15px;
 }
@@ -893,8 +902,7 @@ img {
   width: 231px;
   display: grid;
   align-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin: 20px auto 0px;
   padding-left: 0;
   list-style: none;
   font-style: normal;
@@ -918,8 +926,11 @@ img {
 }
 
 .footer__social {
-  margin-left: 70px;
-  padding-top: 12px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__text {
@@ -931,18 +942,21 @@ img {
 }
 
 .footer__form {
-  margin-left: 93px;
   padding-top: 12px;
 }
 
 .footer__thumb {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__input {
-  width: 358px;
+  width: 100%;
+  max-width: 480px;
+  height: 50px;
   margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -1198,12 +1212,6 @@ img {
 .grid__item {
   margin-left: 30px;
   margin-top: 30px;
-  box-shadow: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.grid__item:hover, .grid__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project {

@@ -1,25 +1,36 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section__container {
-    width: 1200px;
+    // width: 1200px;
+    max-width: $mobile;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .section__title {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.17;
+    // text-align: center;
+    // color: $headerColor;
+
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: $headerColor;
 }
 
 .section--top {
-    padding-top: 0;
+    display: none;
+   // padding-top: 0;
 }
 
 .section--bg-color {

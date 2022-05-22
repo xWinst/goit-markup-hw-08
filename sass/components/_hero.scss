@@ -1,12 +1,13 @@
 .hero {
+    padding: 118px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-position: center;
-    margin: auto;
-    padding: 200px 0;
-    max-width: 1600px;
+    // justify-content: center;
+    // background-position: center;
+    // margin: auto;
+    // padding: 200px 0;
+    // max-width: 1600px;
     color: $bgColor;
     background-color: $additionalBgColor;
     background-image: linear-gradient($gradientColor, $gradientColor),
@@ -14,11 +15,17 @@
 }
 
 .hero__slogan {
-    width: 696px;
+    // width: 696px;
+    // margin-bottom: 30px;
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    // letter-spacing: 0.06em;
     margin-bottom: 30px;
+    width: 360px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
