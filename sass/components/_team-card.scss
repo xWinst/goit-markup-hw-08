@@ -1,0 +1,26 @@
+.team-card {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bgColor;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px $shadowColor2, 
+                0px 1px 1px $shadowColor3,
+                0px 2px 1px $shadowColor4;
+}
+
+.team-card__name {
+    margin: 30px auto 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $headerColor;
+}
+
+.team-card__position {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $textColor;
+}

@@ -1,0 +1,24 @@
+.customer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    color: $iconColor;
+    border: 1px solid $iconColor;
+    border-radius: 4px;
+
+    transition: color 250ms $timing, border-color 250ms $timing;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+        border-color: $accentColor;
+    }
+}
+
+.customer-link__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}

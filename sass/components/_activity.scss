@@ -1,0 +1,22 @@
+.actyvity {
+    position: relative;
+}
+
+.activity__title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    background-color: $additionalBgColor2;
+    color: $bgColor;
+}

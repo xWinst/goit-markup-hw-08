@@ -1,0 +1,27 @@
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    color: $iconColor;
+    border-radius: 50%;
+
+    transition: color 250ms $timing, 
+                background-color 250ms $timing;
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        color: $bgColor;
+    }
+}
+
+.social-link__icon {
+    fill: currentColor;
+}
+
+.social-link--color {
+    color: $bgColor;
+    background-color: $iconBgColor;
+}

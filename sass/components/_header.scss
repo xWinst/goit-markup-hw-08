@@ -1,0 +1,26 @@
+.header {
+    border-bottom: 1px solid $separatorLineColor;
+}
+
+.header__container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__container,
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list {
+    margin-left: 94px;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    color: $textColor;
+}

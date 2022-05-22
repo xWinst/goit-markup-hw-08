@@ -1,0 +1,22 @@
+/* Основной текст */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: $bgColor;
+    color: $textColor;
+}
+
+/* Обнуляем отступы */
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* Убираем лишниее пространство под картинкой */
+img {
+    display: block;
+}

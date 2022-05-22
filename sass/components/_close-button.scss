@@ -1,0 +1,23 @@
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid $shadowColor5;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: color 250ms $timing;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.close-btn__icon {
+    fill: currentColor;
+}

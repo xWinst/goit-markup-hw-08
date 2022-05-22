@@ -1,0 +1,41 @@
+.link {
+    padding: 32px 0;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $headerColor;
+    text-decoration: none;
+
+    transition: color 250ms $timing;
+
+    &:hover,
+    &:focus {
+        color: $accentColor; 
+    }
+}
+
+.link--current {
+    position: relative;
+    color: $accentColor;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        margin: inherit;
+        display: block;
+        background-color: $accentColor;
+        border-radius: 2px;
+    }
+}
+
+.link--right {
+    margin-left: 50px;
+}
+
+.link__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

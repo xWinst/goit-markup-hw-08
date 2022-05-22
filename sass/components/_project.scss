@@ -1,0 +1,52 @@
+.project {
+    text-decoration: none;
+}
+
+.project__img {
+    position: relative;
+    overflow: hidden;
+}
+
+.project__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    display: block;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $bgColor;
+    background-color: $overlayBgColor;
+    transform: translateY(100%);
+
+    transition: transform 250ms $timing;
+
+    .grid__item:hover &,
+    .grid__item:focus & {
+        transform: translateY(0);
+    }
+}
+
+.project__description {
+    padding: 20px 24px;
+    border-right: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    border-left: 1px solid $borderColor;
+}
+
+.project__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $headerColor;
+}
+
+.project__type {
+    margin: 4px 0 0 0;
+    font-size: 16px;
+    line-height: 1.88;
+    color: $textColor;
+}

@@ -1,0 +1,21 @@
+.feature {
+    width: 270px;
+}
+
+.feature__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 25px 0;
+    background-color: $secondaryBgColor;
+    border-radius: 4px;
+}
+
+.feature__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $headerColor;
+}
