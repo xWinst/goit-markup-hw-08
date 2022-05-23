@@ -16,22 +16,4 @@
 
 .grid__item {
     margin: 15px;
-    max-width: 450px;
-
-    transition: box-shadow 250ms $timing;
-
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px $shadowColor2, 
-                0px 4px 4px $shadowColor7,
-                1px 4px 6px $shadowColor8;
-    }
-
-    @media screen and (min-width: $tablet) {
-        width: 354px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: 370px;
-    }
 }

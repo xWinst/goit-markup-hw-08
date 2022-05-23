@@ -6,7 +6,7 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: $headerColor;
 }
@@ -64,7 +64,8 @@
     transition: border-color 250ms $timing;
 
     .form__label:hover &,
-    .form__label:focus & {
+    .form__label:focus &,
+    &:focus {
         border-color: $accentColor;
         outline: none;
     }
@@ -115,6 +116,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: 12px;
+    line-height: 1.17;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form__checkbox {
