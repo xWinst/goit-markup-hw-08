@@ -1,36 +1,49 @@
 .section {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section__container {
-    // width: 1200px;
     max-width: $mobile;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
 }
 
 .section__title {
-    // margin-bottom: 50px;
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.17;
-    // text-align: center;
-    // color: $headerColor;
-
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: $headerColor;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
 
 .section--top {
     display: none;
-   // padding-top: 0;
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+        padding-top: 0;
+}
+
 }
 
 .section--bg-color {

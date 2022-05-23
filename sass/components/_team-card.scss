@@ -1,4 +1,6 @@
 .team-card {
+    max-width: 450px;
+    margin: 15px;
     padding-bottom: 24px;
     // padding-bottom: 30px;
     display: flex;
@@ -12,13 +14,18 @@
                 0px 1px 1px $shadowColor3,
                 0px 2px 1px $shadowColor4;
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
     }
 }
 
 .team-card__foto {
-    width: 450px;
+    width: 100%;
+
 }
 
 .team-card__name {

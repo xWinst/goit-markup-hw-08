@@ -1,8 +1,15 @@
 .feature {
     // width: 270px;
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    margin: 15px;
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
+    
 }
 
 .feature__icon {
@@ -22,4 +29,8 @@
     text-align: center;
     text-transform: uppercase;
     color: $headerColor;
+
+    @media screen and (min-width: $tablet) {
+        text-align: start;
+    }
 }

@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     width: 210px;
-    // width: 170px;
     height: 92px;
     color: $iconColor;
     border: 1px solid $iconColor;
@@ -15,6 +14,14 @@
     &:focus {
         color: $accentColor;
         border-color: $accentColor;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
     }
 }
 
