@@ -1,11 +1,21 @@
 .filter {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 50px 0;
+    margin: -15px 0 40px 0;
     padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-}
 
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin: 0 0 50px 0;
+    }
+}
+.filter__item {
+    margin-top: 15px;
+}
 
 .filter__btn {
     margin: 0 4px;
