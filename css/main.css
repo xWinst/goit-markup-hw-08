@@ -679,6 +679,7 @@ img {
 
 .hero {
   max-width: 480px;
+  margin: auto;
   padding: 118px 0;
   display: flex;
   flex-direction: column;
